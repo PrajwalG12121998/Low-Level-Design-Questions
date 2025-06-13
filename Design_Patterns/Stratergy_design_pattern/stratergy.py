@@ -37,3 +37,12 @@ class SportVehicle(Vehicle):
         super().__init__(SpecialDriveStratergy())
 
 
+if __name__ == "__main__":
+    pv = PassengerVehicle()
+    pv.drive()  # Output: Normal driving behavior
+
+    ov = offRoadVehicle()
+    ov.drive()  # Output: Special performance driving
+
+    sv = SportVehicle()
+    sv.drive()  # Output: Special performance driving
