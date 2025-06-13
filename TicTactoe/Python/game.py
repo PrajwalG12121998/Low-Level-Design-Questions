@@ -11,7 +11,7 @@ class Game:
         self.board.print_board()
         while not self.board.is_full() and not self.board.has_winner():
             print(f"{self.current_player.get_player_name()}'s turn.")
-            #Take input
+            
             row = self.get_valid_input("Enter row between 0-2")
             col = self.get_valid_input("Enter column between 0-2")
             try:
